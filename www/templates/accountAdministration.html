@@ -1,0 +1,224 @@
+<ion-view hide-nav-bar="true" hide-back-button="true">
+  <ion-content class="padding">
+  	<div class="row" ng-init="name ='addContract'">
+  		<div class="col col-20">
+  		</div>
+  		<div class="col col-10">
+  			<button class="button button-assertive button-inline icon ion-android-contract" style="float:right; font-weight:500;border-radius:200px 200px 200px 200px;box-shadow:5px 5px 5px #888888;font-size: 10px; text-shadow: 2px 2px #6c7b8b; height: 75px; width: 75px;" ng-click="name='addContract'"></button>
+  			<span style="font-weight:500;float: right;">Add Contract</span>
+  		</div>
+  		<div class="col col-10">
+  			<button class="button button-positive button-inline icon ion-edit" style="float:right; font-weight:500;border-radius:200px 200px 200px 200px;box-shadow:5px 5px 5px #888888;font-size: 10px; text-shadow: 2px 2px #6c7b8b; height: 75px; width: 75px;" type="submit"></button>
+  			<span style="font-weight:500;float: right">Change Contract</span>
+  		</div>
+  		<div class="col col-10">
+  			<button class="button button-positive button-inline icon ion-android-apps" style="float:right; font-weight:500;border-radius:200px 200px 200px 200px;box-shadow:5px 5px 5px #888888;font-size: 10px; text-shadow: 2px 2px #6c7b8b; height: 75px; width: 75px;" type="submit" ng-click="name='addProject'"></button>
+  			<span style="font-weight:500;float: right;">Add Project</span>
+  		</div>
+  		<div class="col col-10">
+  			<button class="button button-positive button-inline icon ion-edit" style="float:right; font-weight:500;border-radius:200px 200px 200px 200px;box-shadow:5px 5px 5px #888888;font-size: 10px; text-shadow: 2px 2px #6c7b8b; height: 75px; width: 75px;" type="submit"></button>
+  			<span style="font-weight:500;float: right;">Change Contract</span>
+  		</div>
+  		<div class="col col-10">
+  			<button class="button button-positive button-inline icon ion-android-calendar" style="float:right; font-weight:500;border-radius:200px 200px 200px 200px;box-shadow:5px 5px 5px #888888;font-size: 10px; text-shadow: 2px 2px #6c7b8b; height: 75px; width: 75px;" type="submit" ng-click="name='addILCAccount'"></button>
+  			<span style="font-weight:500;float: right;">Add ILCAccount</span>
+  		</div>
+  		<div class="col col-10">
+  			<button class="button button-positive button-inline icon ion-edit" style="float:right; font-weight:500;border-radius:200px 200px 200px 200px;box-shadow:5px 5px 5px #888888;font-size: 10px; text-shadow: 2px 2px #6c7b8b; height: 75px; width: 75px;" type="submit"></button>
+  			<span style="font-weight:500;float: right;">Change<br> ILCAccount</span>
+  		</div>
+  	 </div>
+  	<hr>
+  	<div ng-if="name=='addContract'">
+	  	<span style="font-weight:500;font-size: 20px;">Existing Contracts</span>
+	  	<div class="spacer" style="width: 250px; height: 20px;"></div>
+	  	<ion-list>
+	  		<ion-item>
+	  			<h4>ContactID: ABC123</h4>
+	  			<h4>AccountID: BARCA</h4>
+	  			<h4>ProjectDB: XYZ</h4>
+	  		</ion-item>
+	  		<ion-item>
+	  			<h4>ContactID: ABC123</h4>
+	  			<h4>AccountID: BARCA</h4>
+	  			<h4>ProjectDB: XYZ</h4>
+	  		</ion-item>
+	  	</ion-list>
+	  	<div class="card" style="border-radius:10px 10px 10px 10px;">
+	  		<div class="row">
+	  			<div class="col col-30">
+					<label class="item item-input" name="id" id="account-input10">
+		   				<input type="text" placeholder="Add Account" required="" name="id">
+					</label>
+				</div>
+				<div class="col col-30">
+					<label class="item item-input" name="accID" id="account-input10">
+		   				<input type="text" placeholder="Account ID" required="" name="accountID">
+					</label>
+				</div>
+				<div class="col col-30">
+					<label class="item item-input" name="projDB" id="account-input10">
+		   				<input type="text" placeholder="Project DB" required="" name="projectDB">
+					</label>
+				</div>
+			</div>
+			<div class="row">
+	  			<div class="col col-30">
+					<label class="item item-input" name="contName" id="account-input10">
+		   				<input type="text" placeholder="Contract Name" required="" name="contractName">
+					</label>
+				</div>
+				<div class="col col-30">
+					<label class="item item-input" name="towerLD" id="account-input10">
+		   				<input type="text" placeholder="Tower Lead NotesID" required="" name="towerLeadNotesID">
+					</label>
+				</div>
+				<div class="col col-30">
+					<label class="item item-input" name="proPHET" id="account-input10">
+		   				<input type="text" placeholder="Pro-PHET PM NotesID" required="" name="proPHETPMNotesID">
+					</label>
+				</div>
+			</div>
+			<div class="row">
+	  			<div class="col col-30">
+					<label class="item item-input" name="contSTDate" id="account-input10">
+		   				<input type="date" placeholder="Contract Start Date" required="" name="contractStartDate">
+					</label>
+				</div>
+				<div class="col col-30">
+					<label class="item item-input" name="ContEDDate" id="account-input10">
+		   				<input type="date" placeholder="Contract End Date" required="" name="contractEndDate">
+					</label>
+				</div>
+				<div class="col col-30">
+					<label class="item item-input" name="ilcAcc" id="account-input10">
+		   				<input type="text" placeholder="ILC Accounts" required="" name="ilcAccounts">
+					</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-30">
+					<label class="item item-input" name="subProj" id="account-input10">
+						<span class="input-label" style="font-weight:500;font-size:15px;text-align:left;">Sub-Projects</span>
+	   					<select style="font-weight:500;font-size:15px;width:70%;">
+							<option>ABC</option>
+							<option>DEF</option>
+						</select>
+					</label>
+				</div>
+				<div class="col col-30">
+					<button class="button button-block" style="background-color: orange; color: white; float: right; font-weight:500;border-radius:10px 10px 10px 10px;" id="addILCAcc" type="submit" ng-click="name='addILCAccount'">Add ILCAccount</button>	
+				</div>
+			</div>	    
+		</div>
+		<button class="button button-assertive button-block" style="float: right; font-weight:300;border-radius:10px 10px 10px 10px;" type="submit" id="addContract">Submit</button>
+	  	<div class="spacer" style="width: 250px; height: 100px;"></div>
+	</div>
+	<div ng-if="name=='addProject'">
+	  	<span style="font-weight:500;font-size: 20px;">Existing Projects</span>
+	  	<div class="spacer" style="width: 250px; height: 20px;"></div>
+	  	<ion-list>
+	  		<ion-item>
+	  			<h4>ContactID: ABC123</h4>
+	  			<h4>AccountID: BARCA</h4>
+	  			<h4>ProjectDB: XYZ</h4>
+	  		</ion-item>
+	  		<ion-item>
+	  			<h4>ContactID: ABC123</h4>
+	  			<h4>AccountID: BARCA</h4>
+	  			<h4>ProjectDB: XYZ</h4>
+	  		</ion-item>
+	  	</ion-list>
+	  	<div class="card" style="border-radius:10px 10px 10px 10px;">
+	  		<div class="row">
+	  			<div class="col col-30">
+					<label class="item item-input" name="id" id="account-input10">
+		   				<input type="text" placeholder="Add Account" required="" name="id">
+					</label>
+				</div>
+				<div class="col col-30">
+					<label class="item item-input" name="name" id="account-input10">
+		   				<input type="text" placeholder="Name" required="" name="name">
+					</label>
+				</div>
+				<div class="col col-30">
+					<label class="item item-input" name="projMgrNotesID" id="account-input10">
+		   				<input type="text" placeholder="Project Manager NotesID" required="" name="projectMangerNotesID">
+					</label>
+				</div>
+			</div>
+			<div class="row">
+	  			<div class="col col-30">
+					<label class="item item-input" name="projSTDate" id="account-input10">
+						<span class="input-label" style="font-weight:500;font-size:15px;text-align:left;">Project Start Date</span>	
+		   				<input type="date" placeholder="Project Start Date" required="" name="projectStartDate">
+					</label>
+				</div>
+				<div class="col col-30">
+					<label class="item item-input" name="projEDDate" id="account-input10">
+		   				<input type="date" placeholder="Project End Date" required="" name="projectEndDate">
+					</label>
+				</div>
+				<div class="col col-30">
+					<label class="item item-input" name="ilcWrkItem" id="account-input10">
+		   				<input type="text" placeholder="ILC Work Item" required="" name="ilcWrkItem">
+					</label>
+				</div>
+			</div>	    
+		</div>
+		<button class="button button-assertive button-block" style="float: right; font-weight:300;border-radius:10px 10px 10px 10px;" type="submit" id="addProject">Submit</button>
+	</div>
+	<div ng-if="name=='addILCAccount'">
+	ILCAccount
+		<div>
+			<label class="item item-input" name="selectContr" id="account-input10">
+				<span class="input-label" style="font-weight:500;font-size:15px;text-align:left;">Select Contract</span>
+					<select style="font-weight:500;font-size:15px;width:70%;">
+					<option>ABC</option>
+					<option>DEF</option>
+				</select>
+			</label>
+			<br>
+			<span style="font-weight:500;font-size: 20px;">Existing ILCAccounts</span>
+		  	<div class="spacer" style="width: 250px; height: 20px;"></div>
+		  	<ion-list>
+		  		<ion-item>
+		  			<h4>ContactID: ABC123</h4>
+		  			<h4>AccountID: BARCA</h4>
+		  			<h4>ProjectDB: XYZ</h4>
+		  		</ion-item>
+		  		<ion-item>
+		  			<h4>ContactID: ABC123</h4>
+		  			<h4>AccountID: BARCA</h4>
+		  			<h4>ProjectDB: XYZ</h4>
+		  		</ion-item>
+		  	</ion-list>
+		</div>
+		<div class="card" style="border-radius:10px 10px 10px 10px;">
+			<div class="row">
+				<div class="col col-40">
+					<label class="item item-input" name="ilcAccName" id="ilcAccName">
+		   				<input type="text" placeholder="ILCAccount Name" required="" name="ilcAccName">
+					</label>
+				</div>
+				<div class="col col-40">
+					<button class="button button-assertive button-block" style="float: right; font-weight:300;border-radius:10px 10px 10px 10px;" type="submit" id="addProject" ng-click="addfield()">Add WorkItem</button>
+				</div>		       	
+			</div>
+			<div ng-repeat="item in inputs">
+				<div class="row">
+					<div class="col col-40">
+		        		<input type="text" placeholder="ILCAccount Name" ng-model="item.value"\>
+		        	</div>
+		        	<div class="col col-40">
+		        		<button class="button button-block" style="background-color: orange; float: right; font-weight:400;border-radius:10px 10px 10px 10px;" type="submit" ng-click="addActivityField()">Add Activities</button>
+		        		<div ng-repeat="field in activityField">
+		        			<input class="card" type="text" placeholder="Activity Name" ng-model="item.value"\>
+		        		</div>
+		        	</div>
+	        	</div>
+	       	</div>
+		</div>
+	</div>
+  </ion-content>
+</ion-view>
