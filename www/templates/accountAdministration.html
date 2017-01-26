@@ -191,6 +191,7 @@
 				</div>
 			</div>	    
 		</div>
+		<button class="button button-assertive button-block" style="float: right; font-weight:300;border-radius:10px 10px 10px 10px;" type="submit" id="changeContract">Submit</button>
 	</div>
 	<div ng-if="name=='addProject'">
 	  	<span style="font-weight:500;font-size: 20px;">Existing Projects</span>
@@ -293,7 +294,7 @@
 				</div>
 			</div>	    
 		</div>
-		<button class="button button-assertive button-block" style="float: right; font-weight:300;border-radius:10px 10px 10px 10px;" type="submit" id="addProject">Submit</button>
+		<button class="button button-assertive button-block" style="float: right; font-weight:300;border-radius:10px 10px 10px 10px;" type="submit" id="changeProject">Submit</button>
 	</div>
 	<div ng-if="name=='addILCAccount'">
 		<div>
@@ -345,16 +346,28 @@
 	        	</div>
 	       	</div>
 		</div>
+		<button class="button button-assertive button-block" style="float: right; font-weight:300;border-radius:10px 10px 10px 10px;" type="submit" id="addILCAccount">Submit</button>
 	</div>
 	<div ng-if="name=='changeILCAccount'">
-		<div>
-			<label class="item item-input" name="selectContr" id="account-input10">
-				<span class="input-label" style="font-weight:500;font-size:15px;text-align:left;">Select Contract</span>
-					<select style="font-weight:500;font-size:15px;width:70%;">
-					<option>ABC</option>
-					<option>DEF</option>
-				</select>
-			</label>
+		<div class="card" style="border-radius:10px 10px 10px 10px;">
+			<div>
+				<label class="item item-input" name="selectContr" id="account-input10">
+					<span class="input-label" style="font-weight:500;font-size:15px;text-align:left;">Select Contract</span>
+						<select style="font-weight:500;font-size:15px;width:70%;">
+						<option>ABC</option>
+						<option>DEF</option>
+					</select>
+				</label>
+			</div>
+			<div>
+				<label class="item item-input" name="subProj" id="account-input10">
+					<span class="input-label" style="font-weight:500;font-size:15px;text-align:left;">Select Sub-Projects</span>
+						<select style="font-weight:500;font-size:15px;width:70%;">
+						<option>ABC</option>
+						<option>DEF</option>
+					</select>
+				</label>
+			</div>
 		</div>
 		<div class="card" style="border-radius:10px 10px 10px 10px;">
 			<div class="row">
@@ -388,6 +401,7 @@
 				</div>		       	
 			</div>
 		</div>
+		<button class="button button-assertive button-block" style="float: right; font-weight:300;border-radius:10px 10px 10px 10px;" type="submit" id="changeILCAccount">Submit</button>
 	</div>
   </ion-content>
 </ion-view>
