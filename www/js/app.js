@@ -49,6 +49,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     controller:'AccAdminCtrl'
   })
 
+  .state('employeeAdministration', {
+    url: '/employeeAdministration',
+    templateUrl: 'templates/employeeAdministration.html',
+    controller:'EmpAdminCtrl'
+  })
+
   // setup an abstract state for the tabs directive
     .state('tab', {
     url: '/tab',

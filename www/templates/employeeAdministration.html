@@ -1,0 +1,182 @@
+<ion-view hide-nav-bar="true" hide-back-button="true">
+  <ion-content class="padding">
+  	<div class="row" ng-init="name ='personalDetails'">
+  		<div class="col col-30">
+  		</div>
+  		<div class="col col-10">
+  			<button class="button button-assertive button-inline icon ion-android-contract" style="float:right; font-weight:500;border-radius:200px 200px 200px 200px;box-shadow:5px 5px 5px #888888;font-size: 10px; text-shadow: 2px 2px #6c7b8b; height: 75px; width: 75px;" ng-click="name='personalDetails'"></button>
+  			<span style="font-weight:500;float: right;">Personal Details</span>
+  		</div>
+      <div class="spacer" style="width: 150px; height: 20px;"></div>
+  		<!-- <div class="col col-10">
+  			<button class="button button-positive button-inline icon ion-edit" style="float:right; font-weight:500;border-radius:200px 200px 200px 200px;box-shadow:5px 5px 5px #888888;font-size: 10px; text-shadow: 2px 2px #6c7b8b; height: 75px; width: 75px;" type="submit" ng-click="name='emergencyContact'"></button>
+  			<span style="font-weight:500;float: right">Emergency Contact</span>
+  		</div>
+      <div class="spacer" style="width: 100px; height: 20px;"></div> -->
+  		<div class="col col-10">
+  			<button class="button button-positive button-inline icon ion-android-apps" style="float:right; font-weight:500;border-radius:200px 200px 200px 200px;box-shadow:5px 5px 5px #888888;font-size: 10px; text-shadow: 2px 2px #6c7b8b; height: 75px; width: 75px;" type="submit" ng-click="name='employmentDetails'"></button>
+  			<span style="font-weight:500;float: left;width:200px;">Employment Details</span>
+  		</div>
+      <div class="col col-30">
+      </div>
+	  </div>
+    <hr>
+    <div ng-if="name=='personalDetails'">
+      <div class="card" style="border-radius:10px 10px 10px 10px;">
+        <div class="row">
+          <div class="col col-30">
+            <label class="item item-input" name="firstName" id="firstName-input10">
+                <input type="text" placeholder="First Name" required="" name="firstName">
+            </label>
+          </div>
+          <div class="col col-30">
+            <label class="item item-input" name="lastName" id="lastName-input10">
+                <input type="text" placeholder="Last Name" required="" name="lastName">
+            </label>
+          </div>
+          <div class="col col-30">
+            <label class="item item-input" name="contactNumber" id="contactNumber-input10">
+                <input type="text" placeholder="Contact Number" required="" name="contactNumber">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-30">
+            <label class="item item-input" name="personalEmail" id="personalEmail-input10">
+                <input type="text" placeholder="Personal Email" required="" name="personalEmail">
+            </label>
+          </div>
+          <div class="col col-30">
+            <label class="item item-input" name="dateOfBirth" id="dateOfBirth-input10">
+                <input type="date" placeholder="Date Of Birth" required="" name="dateOfBirth">
+            </label>
+          </div>
+          <div class="col col-30">
+            <label class="item item-input" name="diversity" id="diversity-input10">
+                <input type="text" placeholder="Diversity" required="" name="diversity">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-30">
+            <label class="item item-input" name="postalAddress" id="postalAddress-input10">
+                <input type="text" placeholder="Postal Address" required="" name="postalAddress">
+            </label>
+          </div>
+          <div class="col col-30">
+          </div>
+          <div class="col col-30">
+          </div>
+        </div>
+      </div>
+      <div>
+        <span style="font-weight:500;font-size: 20px;">Emergency Contact Details</span>
+      </div>
+      <div class="card" style="border-radius:10px 10px 10px 10px;">
+        <div class="row">
+          <div class="col col-30">
+            <label class="item item-input" name="emergencyFirstName" id="emergencyFirstName-input10">
+                <input type="text" placeholder="First Name" required="" name="emergencyFirstName">
+            </label>
+          </div>
+          <div class="col col-30">
+            <label class="item item-input" name="emergencyLastName" id="emergencyLastName-input10">
+                <input type="text" placeholder="Last Name" required="" name="emergencyLastName">
+            </label>
+          </div>
+          <div class="col col-30">
+            <label class="item item-input" name="emergencyContactNumber" id="emergencyContactNumber-input10">
+                <input type="text" placeholder="Contact Number" required="" name="emergencyContactNumber">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-30">
+            <label class="item item-input" name="emergencyPersonalEmail" id="emergencyPersonalEmail-input10">
+                <input type="text" placeholder="Personal Email" required="" name="emergencyPersonalEmail">
+            </label>
+          </div>
+          <div class="col col-30">
+            <label class="item item-input" name="emergencyRelationship" id="emergencyRelationship-input10">
+                <input type="text" placeholder="Relationship" required="" name="emergencyRelationship">
+            </label>
+          </div>
+          <div class="col col-30">
+          </div>
+        </div>
+      </div>
+      <button class="button button-assertive button-block" style="float: right; font-weight:300;border-radius:10px 10px 10px 10px;" type="submit" id="addContract">Submit</button>
+    </div>
+    <div ng-if="name=='employmentDetails'">
+      <div class="card" style="border-radius:10px 10px 10px 10px;">
+        <div class="row">
+          <div class="col col-30">
+            <label class="item item-input" name="employeeID" id="employeeID-input10">
+                <input type="text" placeholder="Employee ID" required="" name="employeeID">
+            </label>
+          </div>
+          <div class="col col-30">
+            <label class="item item-input" name="notesID" id="notesID-input10">
+                <input type="text" placeholder="Notes ID" required="" name="notesID">
+            </label>
+          </div>
+          <div class="col col-30">
+            <label class="item item-input" name="ibmEmailID" id="ibmEmailID-input10">
+                <input type="text" placeholder="IBM Email ID" required="" name="ibmEmailID">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-30">
+            <label class="item item-input" name="dateOfJoining" id="dateOfJoining-input10">
+                <input type="date" placeholder="Date of Joining" required="" name="dateOfJoining">
+            </label>
+          </div>
+          <div class="col col-30">
+            <label class="item item-input" name="band" id="band-input10">
+                <input type="text" placeholder="Band" required="" name="band">
+            </label>
+          </div>
+          <div class="col col-30">
+            <label class="item item-input" name="permNotesID" id="permNotesID-input10">
+                <input type="text" placeholder="Permanent Notes ID" required="" name="permNotesID">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-30">
+            <ion-toggle name="isActive" toggle-class="toggle-calm card" style="border-radius:10px 10px 10px 10px;width:90%;margin:10px;">Is Active?</ion-toggle>
+          </div>
+          <div class="col col-30">
+            <ion-toggle name="cfReadyForNextLevel" toggle-class="toggle-calm card" style="border-radius:10px 10px 10px 10px;width:90%;margin:10px;">CF Ready For Next Level</ion-toggle>
+          </div>
+          <div class="col col-30">
+            <label class="item item-input" name="lastWorkingDay" id="lastWorkingDay-input10">
+                <input type="date" placeholder="Last Working Day" required="" name="lastWorkingDay">
+            </label>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span style="font-weight:500;font-size: 20px;">Skill Details</span>
+      </div>
+      <div class="card" style="border-radius:10px 10px 10px 10px;">
+        <div class="row">
+          <div class="col col-30">
+            <label class="item item-input" name="primarySkill" id="primarySkill-input10">
+                <input type="text" placeholder="Primary Skill" required="" name="primarySkill">
+            </label>
+          </div>
+          <div class="col col-30">
+            <label class="item item-input" name="secondarySkill" id="secondarySkill-input10">
+                <input type="text" placeholder="Secondary Skill" required="" name="secondarySkill">
+            </label>
+          </div>
+          <div class="col col-30">
+          </div>
+        </div>
+      </div>
+      <button class="button button-assertive button-block" style="float: right; font-weight:300;border-radius:10px 10px 10px 10px;" type="submit" id="addContract">Submit</button>
+    </div>
+  </ion-content>
+</ion-view>

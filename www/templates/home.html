@@ -1,32 +1,45 @@
 <ion-view hide-nav-bar="true" hide-back-button="true">
   <ion-content class="padding">
-    <div class="row" style="background-color: transparent;">
-      <div class="col col-20">
-      </div>
-      <div class="col col-20">
-      </div>
-      <div class="col col-20">
-      </div>
-      <div class="col col-20">
-      </div>
-      <div class="col col-20">
-        <button class="button button-energized button-inline" style="align-items: right; font-weight:400;border-radius:10px 10px 10px 10px;box-shadow:5px 5px 5px #888888;text-shadow: 2px 2px #6c7b8b;" type="submit" ng-controller="HomeCtrl" ng-click="loginNow()">Login</button>
-      </div>
-    </div>
-    <hr>
-    <div>
-      <div class="spacer" style="width: 250px; height: 200px;"></div>
-      <div class="row" style="background-color: transparent;">
-        <div class="col col-30">
+    <div style="background-color: transparent;">
+      <div class="row" style="background-color: #2c2c2d;">
+        <div class="col col-20">
         </div>
-        <div class="col col-40">
-          <!-- <button class="button button-energized button-inline" style="align-items: center; font-weight:400;border-radius:200px 200px 200px 200px;box-shadow:5px 5px 5px #888888;text-shadow: 2px 2px #6c7b8b; height: 400px; width: 400px;" type="submit">Login</button> -->
-          <h2 style="text-align: center;">Digital Master Resource Management Portal</h2>
+        <div class="col col-20">
+        </div>
+        <div class="col col-20">
         </div>
         <div class="col col-30">
+          <button class="button button-inline icon ion-log-in" style="float: right;background-color: transparent;color: white; font-weight:400;border-radius:50px 50px 50px 50px;" title="Log-In" type="submit" ng-controller="HomeCtrl" ng-click="loginNow();name='logIn';show=true"><div class="spacer" style="width: 100px; height: 1px;"></div></button>
+          <button class="button button-inline icon ion-ios-search" style="float: right;background-color: transparent;color: white; font-weight:400;border-radius:50px 50px 50px 50px;" title="Search" type="submit"></button>
+        </div>
+        <div class="col col-10">          
         </div>
       </div>
-      <div class="spacer" style="width: 250px; height: auto;"></div>
+      <div class="spacer" style="width: 250px; height: 10px;"></div>
+      <div>
+       <!--  <div class="spacer" style="width: 250px; height: 200px;"></div> -->
+        <ion-slide-box style="height: 100vh; width: auto;" does-continue="true" auto-play="true" slide-interval=3000>
+          <ion-slide>
+            <div class="row">
+              <div class="col col-50" style="background-color: #eeeeba;">
+                <h1 style="color: #f9f9ea;">My Details</h1><br>
+                <!-- <img ng-src="../img/myDetails.jpg" style="he" /> -->
+              </div>
+              <div class="col col-50" style="background-color: #eeeeba;">
+                <h1 style="color: #f9f9ea;">Account Administration</h1><br>
+                <!-- <img ng-src="" /> -->
+              </div>
+            </div>
+          </ion-slide>
+          <ion-slide style="background-color: #d6d6a7;">
+            <div class="box yellow"><h1>Digital Master Resource Management Portal 2</h1></div>
+          </ion-slide>
+          <ion-slide  style="background-color: #d6d6a7;">
+            <div class="box pink"><h1>Digital Master Resource Management Portal 3</h1></div>
+          </ion-slide>
+        </ion-slide-box>
+        <!-- <div class="spacer" style="width: 250px; height: auto;"></div> -->
+      </div>
     </div>
   </ion-content>
 </ion-view>

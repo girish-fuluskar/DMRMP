@@ -4,6 +4,11 @@ angular.module('starter.controllers', [])
   $scope.goAccAdmin = function(){
     $state.go('accountAdministration');
   }
+
+  $scope.goEmpAdmin = function(){
+    $state.go('employeeAdministration');
+  }
+
 })
 
 .controller('AccAdminCtrl', function($scope, $state){
@@ -18,6 +23,10 @@ angular.module('starter.controllers', [])
   $scope.addActivityField = function(){
     $scope.activityField.push({})
   }
+})
+
+.controller('EmpAdminCtrl', function($scope, $state){
+  
 })
 
 .controller('AddProjectCtrl', function($scope){
